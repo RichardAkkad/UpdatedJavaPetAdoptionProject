@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Dog Details</title>
+    <style>
+        /* Body Styles */
+        body {
+            background-color: beige;
+            font-family: calibri;
+            padding: 20px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .card-header {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+            padding: 15px 20px;
+        }
+
+        .card-header h2 {
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        /* Field Container */
+        .field {
+            display: flex;
+            margin-bottom: 15px;
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* Label Styling */
+        .label {
+            color: #444;
+            font-family: Calibri;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100px;
+            padding: 5px;
+        }
+
+        /* Value Styling */
+        .value {
+            color: #666;
+            font-family: Calibri;
+            font-size: 16px;
+            margin-left: 15px;
+            padding: 5px;
+        }
+
+        /* Button Container */
+        .button-group {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        /* Button Styles */
+        .btn {
+            border-radius: 4px;
+            font-family: Calibri;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 8px 20px;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            border: 1px solid #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: 2px solid #007bff;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        /* Table-like structure using divs */
+        .table-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .table-row {
+            display: flex;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+
+        .table-header {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+
+        .table-cell {
+            padding: 8px 12px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <!-- Header Section -->
+    <div class="card-header">
+        <h2>Dog Details</h2>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="card-body">
+        <!-- Details Container -->
+        <div class="table-container">
+            <!-- ID Row -->
+            <div class="table-row">
+                <div class="label">Id</div>
+                <div class="value" th:text="${dog.id}"></div>
+            </div>
+
+            <!-- Age Row -->
+            <div class="table-row">
+                <div class="label">Age</div>
+                <div class="value" th:text="${dog.age}"></div>
+            </div>
+
+            <!-- Breed Row -->
+            <div class="table-row">
+                <div class="label">Breed</div>
+                <div class="value" th:text="${dog.breed}"></div>
+            </div>
+
+            <!-- Colour Row -->
+            <div class="table-row">
+                <div class="label">Colour</div>
+                <div class="value" th:text="${dog.colour}"></div>
+            </div>
+
+            <!-- Sex Row -->
+            <div class="table-row">
+                <div class="label">Sex</div>
+                <div class="value" th:text="${dog.sex}"></div>
+            </div>
+        </div>
+
+        <!-- Button Section -->
+        <div class="button-group">
+            <a href="/searchDog" class="btn btn-secondary">Back to Search</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

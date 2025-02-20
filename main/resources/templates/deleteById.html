@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Dogs by Colour</title>
+    <style>
+        body {
+            background-color: beige;
+            font-family: calibri;
+        }
+        label {
+            font-weight: bold;
+        }
+        input {
+            border-radius: 5px;
+            border-width: 2px;
+            padding: 2px;
+        }
+        button {
+            font-size: 14px;
+            font-family: calibri;
+            padding: 8px;
+            font-weight: bold;
+            border-radius: 5px;
+            border-width: 2px;
+            cursor: pointer;
+        }
+        div {
+            margin-top: 40px;
+        }
+        * {
+            list-style: none;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<form th:action="@{/logout}" method="post">
+    <button type="submit" style="font-size:14px; font-weight:bold;  color:black; ">
+        Logout
+    </button>
+</form>
+<div style="margin-bottom: 30px;"></div>
+<a style="color:black; text-decoration:none; font-weight:bold" class="a1" href="/homePage">
+    home page
+</a>
+
+<div style="margin-bottom: 40px;"></div>
+
+<h2>Delete Dog by Id</h2>
+
+
+<form th:action="@{/deletePetUsingId}" method="get">
+    <div style="margin-bottom: 30px;"></div>
+    <label for="id">id</label>
+    <input type="number" id="id" name="id" />
+    <div></div>
+    <button type="submit">Delete</button>
+</form>
+</body>
+</html>

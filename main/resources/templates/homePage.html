@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            background-image: url('https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        h1 {
+            text-shadow: 1px 1px 2px black;
+        }
+
+        * {
+            text-decoration: none;
+        }
+
+        .navbar {
+            background: beige;
+            font-family: calibri;
+            padding-right: 12px;
+            padding-left: 40px;
+        }
+
+        .navdiv {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            color: black;
+            font-size: 50px;
+            font-weight: 100;
+        }
+
+        /* Remove the general li styling that was causing issues */
+        .navbar > .navdiv > ul > li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        .navbar > .navdiv > ul > li > a {
+            color: black;
+            font-weight: bold;
+            margin-right: 25px;
+            display: inline-block;
+            padding: 15px 0;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar li {
+            position: relative;
+        }
+
+        .navbar .arrow {
+            margin-left: 5px;
+        }
+
+        /* Fixed dropdown styles */
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: beige;
+            top: 100%;
+            left: 0;
+            min-width: 150px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        /* Critical fix: Remove inline-block from dropdown items */
+        .dropdown li {
+            display: block !important;
+            width: 100%;
+        }
+
+        .dropdown a {
+            display: block;
+            padding: 10px 15px;
+            color: black;
+            font-weight: bold;
+        }
+
+        /* Show dropdown on hover */
+        li:hover .dropdown {
+            display: block;
+        }
+
+        .navbar a:hover {
+            background-color: #e8e8d9;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <div class="navdiv">
+        <div class="logo">Paws</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li>
+                <a href="#">Dogs <span style="font-size:7px;" class="arrow">▼</span></a>
+                <ul class="dropdown">
+                    <li><a href="/addPet">Add Dog</a></li>
+                    <li><a href="/searchDog">Search Dog</a></li>
+                    <li><a href="/deleteById">Delete Dog</a></li>
+                    <li><a href="/updateById">Update Dog</a></li>
+
+
+                </ul>
+            </li>
+            <li>
+            <!--<li><a href="#">User</a></li>-->
+                <a href="#">Users <span style="font-size:7px;" class="arrow">▼</span></a>
+                <ul class="dropdown">
+                    <li><a href="/signUp">Add User</a></li>
+                    <li><a href="/deleteUser">Delete User</a></li>
+
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</div>
+</body>
+</html>
