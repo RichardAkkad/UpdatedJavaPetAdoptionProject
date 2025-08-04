@@ -1,4 +1,4 @@
-The project was created to learn how to combined front end(using mainly html,css and a bit of javascript) and backend (using springboot/jav) as well as postgresql for the database to store information.  
+The project was created to learn how to combined front end(using mainly html,css and a bit of javascript) and backend (using springboot/java) as well as postgresql for the database to store information.  
 I initially started this project in python( named as "BeginnerPetAdoptionProject" in my repositories) however I realised that if I wanted to make the project more userfriendly then I  would need to learn some frontend
 applications as well as a backend framework. So I did some researcha and decided to learn html, css, then java and then finally springboot. As I am a big lover of animals and am aware that more people are becoming 
 pet owners I realised this would also mean that more pets will be abandoned, so I decided to  create part of a website pet adoption website which shows a list of all pets that are looking for a home. This website 
