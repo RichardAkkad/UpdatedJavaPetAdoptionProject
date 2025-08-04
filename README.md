@@ -2,5 +2,5 @@ The project was created to learn how to combined front end(using mainly html,css
 I initially started this project in python( named as "BeginnerPetAdoptionProject" in my repositories) however I realised that if I wanted to make the project more userfriendly then I  would need to learn some frontend
 applications as well as a backend framework. So I did some researcha and decided to learn html, css, then java and then finally springboot. As I am a big lover of animals and am aware that more people are becoming 
 pet owners I realised this would also mean that more pets will be abandoned, so I decided to  create part of a pet adoption website which shows a list of all pets that are looking for a home. This website 
-can currently  store and retreive pet information by performing  basic CRUD operation,  as well as having some security and  filtering features. I plan on incoorperating a payment system as well
+can currently  store and retreive pet information by performing  basic CRUD operation,  as well as having some filtering and security features. I plan on incoorperating a payment system as well
 as some other features in the near future. This project was mainly aimed to learn how to create a full stack website where the website involves something that I am passionate about. 
